@@ -24,28 +24,5 @@ syntax on
 
 set textwidth=120
 
-" plugins
-" Specify a directory for plugins
-" - For Neovim: stdpath('data') . '/plugged'
-" - Avoid using standard Vim directory names like 'plugin'
-" Specify a directory for plugins
-" - For Neovim: stdpath('data') . '/plugged'
-" - Avoid using standard Vim directory names like 'plugin'
-call plug#begin('~/.vim/plugged')
-
-" Make sure you use single quotes
-
-" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
-Plug 'junegunn/vim-easy-align'
-
-"easyescape
-
-Plug 'zhou13/vim-easyescape'
-
-" Initialize plugin system
-call plug#end()
-
-let g:easyescape_chars = { "j": 2 }
-let g:easyescape_timeout = 100
-cnoremap jj <ESC>
-
+nnoremap Y y$
+nnoremap O o<Esc>
