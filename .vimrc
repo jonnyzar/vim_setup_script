@@ -1,6 +1,7 @@
 set encoding=utf-8
 set autoindent
 
+nmap oo o<Esc>k
 
 " set compatibility to vim only
 set nocompatible
